@@ -6,30 +6,28 @@
 
 {% block content %}
 <h3>Recipe List</h3>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Cook Time</th>
-        <th>Ingredients</th>
-        <th></th>
-        <th></th>
-    </tr>
-    {% for item in object_list %}
-        <tr>
-            <td>{{item.id}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.cook_time}}</td>
-            <td>{{item.Ingredients}}</td>
-            <td><a href="#">Update</a></td>
-            <td><a href="#">Delete</a></td>
-        </tr>
-        {% empty %}
+
+{% for item in object_list %}
+    <div>
+        <!-- <img src="" alt=""> -->
+        <h4>{{item.name}}</h4>
+        <span>ID - {{item.id}} |</span>
+        <span>Cook Time - {{item.cook_time}}</span>
+        <h5>Ingredients:</h5>
+        <ul>
+            {% for ingredient in ingredients %}
+            <li>{{ingredient.name}}</li>
+
+        {% endfor %}
+        </ul>
+
+        <div>
+            <span><a href="">Update</a></span>
+            <span><a href="">Delete</a></span>
+        </div>
+    </div>
+    {% empty %}
         <p>You have no ingredients added.</p>
     {% endfor %}
-</table>
-{% for ingredient in ingredients %}
-    <p>{{ingredient.name}}</p>
-
-{% endfor %}
 {% endblock %}
+
