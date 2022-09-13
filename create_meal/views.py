@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from .form import IngredientsForm
 from .models import Ingredients, Recipe
 
 # ========================= List Views
@@ -29,3 +30,4 @@ class RecipeList(ListView):
 class IngredientsCreate(CreateView):
     model = Ingredients
     template_name = 'create_meal/pages/ingredients_create.html'
+    form_class = IngredientsForm
