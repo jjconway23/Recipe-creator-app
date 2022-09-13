@@ -59,9 +59,20 @@ class IngredientsUpdate(UpdateView):
 
 
 class RecipeUpdate(UpdateView):
-    model = Recipe()
+    model = Recipe
     template_name = 'create_meal/pages/recipe_update.html'
     fields = '__all__'
 
     def get_success_url(self):
         return '/recipe_list/'
+
+
+# ========================= Create Views
+
+
+class IngredientsDelete(DeleteView):
+    model = Ingredients
+    template_name = 'create_meal/pages/ingredients_delete.html'
+    
+    def get_success_url(self):
+        return '/ingredients_list/'

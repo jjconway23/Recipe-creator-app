@@ -8,4 +8,5 @@ urlpatterns = [
     path('ingredients_list/create/', views.IngredientsCreate.as_view(), name='ingredients_create'),
     path('recipe_list/create', views.RecipeCreate.as_view(), name='recipe_create'),
     path('ingredients_list/update/<pk>/', views.IngredientsUpdate.as_view(), name='ingredients_update'),
+    path('recipe_list/update/<pk>/', views.RecipeUpdate.as_view(), name='recipe_update'),
 ]
