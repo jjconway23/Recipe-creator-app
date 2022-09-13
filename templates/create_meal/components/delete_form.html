@@ -1,0 +1,8 @@
+{% load static %}
+
+<h3>Delete Ingredient</h3>
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>Are you sure you want to delete "{{object.name}}" ?</p>
+    <input type="submit" value="Confirm">
+</form>

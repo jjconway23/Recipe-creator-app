@@ -46,7 +46,7 @@ class RecipeCreate(CreateView):
         return '/recipe_list/'
 
 
-# ========================= Create Views
+# ========================= Update Views
 
 
 class IngredientsUpdate(UpdateView):
@@ -67,7 +67,7 @@ class RecipeUpdate(UpdateView):
         return '/recipe_list/'
 
 
-# ========================= Create Views
+# ========================= Delete Views
 
 
 class IngredientsDelete(DeleteView):
