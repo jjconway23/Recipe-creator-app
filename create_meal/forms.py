@@ -1,7 +1,8 @@
 from django.forms import ModelForm
-from .models import Ingredients, Recipe
+from .models import Ingredients
 
 
 class IngredientsForm(ModelForm):
-    model = Ingredients
-    fields = '__all__'
+    class Meta:
+        model = Ingredients
+        fields = '__all__'

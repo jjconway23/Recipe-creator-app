@@ -1,5 +1,5 @@
-{% extends 'base.html' %}
-<h1>Add Ingredients</h1>
+{% load static %}
+
 <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
