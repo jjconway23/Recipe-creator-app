@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .forms import IngredientsForm
+from .forms import IngredientsForm, RecipeForm
 from .models import Ingredients, Recipe
 
 # ========================= List Views
@@ -34,3 +34,9 @@ class IngredientsCreate(CreateView):
 
     def get_success_url(self):
         return '/ingredients_list/'
+
+
+class RecipeCreate(CreateView):
+    model = Recipe
+    template_name = 'create_meal/pages/recipe_create.html'
+    form_class = RecipeForm
