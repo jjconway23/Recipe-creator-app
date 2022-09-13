@@ -2,9 +2,22 @@ from django.db import models
 
 
 class Ingredients(models.Model):
+    GRAMS = 'G'
+    MILLILITRES = 'ML'
+    TABLESPOON = 'TBSP'
+    TEASPOON = 'TSP'
+    UNIT_CHOICES = [
+        (GRAMS, 'Grams'),
+        (MILLILITRES, 'Millilitres'),
+        (TABLESPOON, 'Tablespoon'),
+        (TEASPOON, 'Teaspoon'),
+    ]
     name = models.CharField(max_length=50)
     quantity = models.IntegerField()
+    unit = models.CharField(max_length=4, choices=UNIT_CHOICES, null=True)
 
+    def __str__(self):
+        return self.name
 
 
 class Recipe(models.Model):
@@ -12,3 +25,5 @@ class Recipe(models.Model):
     cook_time = models.IntegerField()
     Ingredients = models.ManyToManyField(Ingredients)
 
+    def __str__(self):
+        return self.name
