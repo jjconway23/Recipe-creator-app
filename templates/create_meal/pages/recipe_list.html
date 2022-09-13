@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 <title>Recipe List</title>
 {% endblock %}
 
@@ -23,7 +25,7 @@
 
         <div>
             <span><a href="{% url 'recipe_update' item.id %}">Update</a></span>
-            <span><a href="#">Delete</a></span>
+            <span><a href="{% url 'recipe_delete' item.id %}">Delete</a></span>
         </div>
     </div>
     {% empty %}
