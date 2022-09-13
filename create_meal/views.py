@@ -44,3 +44,12 @@ class RecipeCreate(CreateView):
 
     def get_success_url(self):
         return '/recipe_list/'
+
+
+# ========================= Create Views
+
+
+class IngredientsUpdate(UpdateView):
+    model = Ingredients
+    template_name = 'create_meal/pages/ingredients_update.html'
+    fields = '__all__'
