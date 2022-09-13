@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Ingredients, Recipe
 
 # ========================= List Views
@@ -22,3 +23,9 @@ class RecipeList(ListView):
         all_ingredients = Ingredients.objects.all()
         context["ingredients"] = all_ingredients
         return context
+
+# ========================= Create Views
+
+class IngredientsCreate(CreateView):
+    model = Ingredients
+    template_name = 'create_meal/pages/ingredients_create.html'
