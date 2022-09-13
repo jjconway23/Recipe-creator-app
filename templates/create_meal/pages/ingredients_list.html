@@ -22,7 +22,7 @@
             <td>{{item.quantity}}</td>
             <td>{{item.unit}}</td>
             <td><a href="{% url 'ingredients_update' item.id %}">Update</a></td>
-            <td><a href="#">Delete</a></td>
+            <td><a href="{% url 'ingredients_delete' item.id %}">Delete</a></td>
         </tr>
         {% empty %}
         <p>You have no ingredients added.</p>
