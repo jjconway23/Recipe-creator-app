@@ -1,6 +1,13 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from .models import Ingredients, Recipe
 
-# Create your views here.
+
 def home(request):
     return render(request, 'create_meal/pages/index.html')
+
+
+class IngredientsList(ListView):
+    model = Ingredients
+    template_name = 'create_meal/pages/ingredientslist.html'
 
