@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Recipe List</title>
+{% endblock %}
+
+{% block content %}
+<h3>Recipe List</h3>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Cook Time</th>
+        <th>Ingredients</th>
+        <th></th>
+        <th></th>
+    </tr>
+    {% for item in object_list %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.cook_time}}</td>
+            <td>{{item.Ingredients}}</td>
+            <td><a href="#">Update</a></td>
+            <td><a href="#">Delete</a></td>
+        </tr>
+        {% empty %}
+        <p>You have no ingredients added.</p>
+    {% endfor %}
+</table>
+{% for ingredient in ingredients %}
+    <p>{{ingredient.name}}</p>
+
+{% endfor %}
+{% endblock %}
