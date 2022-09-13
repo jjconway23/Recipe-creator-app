@@ -7,7 +7,7 @@ class Ingredients(models.Model):
 
 
 
-class Recipie(models.Model):
+class Recipe(models.Model):
     name = models.CharField(max_length=30)
     cook_time = models.IntegerField()
     Ingredients = models.ManyToManyField(Ingredients)
