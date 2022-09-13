@@ -40,3 +40,7 @@ class RecipeCreate(CreateView):
     model = Recipe
     template_name = 'create_meal/pages/recipe_create.html'
     form_class = RecipeForm
+
+    def get_success_url(self):
+        return '/recipe_list/'
+        
