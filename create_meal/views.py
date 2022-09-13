@@ -53,3 +53,6 @@ class IngredientsUpdate(UpdateView):
     model = Ingredients
     template_name = 'create_meal/pages/ingredients_update.html'
     fields = '__all__'
+
+    def get_success_url(self):
+        return '/ingredients_list/'

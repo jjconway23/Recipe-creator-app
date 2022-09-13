@@ -21,12 +21,12 @@
             <td>{{item.name}}</td>
             <td>{{item.quantity}}</td>
             <td>{{item.unit}}</td>
-            <td><a href="#">Update</a></td>
+            <td><a href="{% url 'ingredients_update' item.id %}">Update</a></td>
             <td><a href="#">Delete</a></td>
         </tr>
         {% empty %}
         <p>You have no ingredients added.</p>
     {% endfor %}
 </table>
-<h4><a href="{% url 'ingredients_create'%}">Add new Ingredients</a></h4>
+<h4><a href="{% url 'ingredients_create' %}">Add new Ingredients</a></h4>
 {% endblock %}
