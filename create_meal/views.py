@@ -76,3 +76,11 @@ class IngredientsDelete(DeleteView):
     
     def get_success_url(self):
         return '/ingredients_list/'
+
+
+class RecipeDelete(DeleteView):
+    model = Recipe
+    template_name = 'create_meal/pages/recipe_delete.html'
+    
+    def get_success_url(self):
+        return '/recipe_list/'
