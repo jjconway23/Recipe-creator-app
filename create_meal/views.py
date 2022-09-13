@@ -36,6 +36,7 @@ class IngredientsCreate(CreateView):
         return '/ingredients_list/'
 
 
+
 class RecipeCreate(CreateView):
     model = Recipe
     template_name = 'create_meal/pages/recipe_create.html'
@@ -43,4 +44,3 @@ class RecipeCreate(CreateView):
 
     def get_success_url(self):
         return '/recipe_list/'
-        

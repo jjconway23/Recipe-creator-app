@@ -28,6 +28,7 @@
     </div>
     {% empty %}
         <p>You have no ingredients added.</p>
-    {% endfor %}
+{% endfor %}
+<h4><a href="{% url 'recipe_create'%}">Add new Recipes</a></h4>
 {% endblock %}
 
