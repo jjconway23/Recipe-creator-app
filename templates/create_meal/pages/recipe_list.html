@@ -1,20 +1,19 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 <title>Recipe List</title>
 {% endblock %}
 
 {% block content %}
 <h3>Recipe List</h3>
+<div class="recipe-container">
+
 
 {% for item in object_list %}
-    <div>
+    <div class="recipe-card">
         <!-- <img src="" alt=""> -->
         <h4>{{item.name}}</h4>
-        <span>ID - {{item.id}} |</span>
-        <span>Cook Time - {{item.cook_time}}</span>
+        <span>Cook Time - {{item.cook_time}} mins</span>
         <h5>Ingredients:</h5>
         <ul>
             {% for ingredient in ingredients %}
@@ -31,6 +30,7 @@
     {% empty %}
         <p>You have no ingredients added.</p>
 {% endfor %}
+</div>
 <h4><a href="{% url 'recipe_create'%}">Add new Recipes</a></h4>
 {% endblock %}
 

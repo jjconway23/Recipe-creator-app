@@ -1,3 +1,32 @@
-body{
-    background-color: red;
+.recipe-container{
+    display: flex;
+    width: 80%;
+    margin:auto;
+    flex-wrap:wrap;
+}
+.recipe-card{
+    width: 26.6%;
+    padding:20px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius:5px;
+    
+    
+}
+.recipe-card > h4 {
+    font-size:18px;
+    text-align:center;
+    margin-bottom:5px
+}
+.recipe-card > span {
+    text-align: center;
+    display: block
+}
+.recipe-card > h5 {
+    font-size:16px
+}
+.recipe-card > ul{
+    display:flex;
+    flex-wrap:wrap;
+    list-style-type:none;
 }
