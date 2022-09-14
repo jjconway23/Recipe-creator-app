@@ -7,7 +7,13 @@
         </ul>
     </nav>
     <div>
+    {% if user.is_authenticated %}
+            <a class="btn signup-btn" href="#">Logout</a>
+            {% else %}
+
             <a class="btn login-btn" href="{% url 'login' %}">Login</a>
             <a class="btn signup-btn" href="{% url 'signup' %}">SignUp</a>
+            {% endif %}
+
     </div>
 </header>
