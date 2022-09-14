@@ -66,3 +66,20 @@
 #update-btn{
     background-color: #f4bd1a;
 }
+/* Nav */
+header{
+    max-height: 100px;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    align-items:center;
+}
+
+nav > ul {
+    list-style-type:none;
+    display:flex;
+    font-size:20px;
+    padding:0;
+    margin-left:800px
+    
+}
