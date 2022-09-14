@@ -1,12 +1,14 @@
 from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .forms import IngredientsForm, RecipeForm
-from .models import Ingredients, Recipe
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import IngredientsForm, RecipeForm
+from .models import Ingredients, Recipe
+
 
 
 # ========================= List Views
@@ -14,12 +16,12 @@ def home(request):
     return render(request, 'create_meal/pages/index.html')
 
 
-class IngredientsList(ListView):
+class IngredientsList(LoginRequiredMixin, ListView):
     model = Ingredients
     template_name = 'create_meal/pages/ingredients_list.html'
 
 
-class RecipeList(ListView):
+class RecipeList(LoginRequiredMixin, ListView):
     model = Recipe
     template_name = 'create_meal/pages/recipe_list.html'
     
@@ -32,7 +34,7 @@ class RecipeList(ListView):
 
 # ========================= Create Views
 
-class IngredientsCreate(CreateView):
+class IngredientsCreate(LoginRequiredMixin, CreateView):
     model = Ingredients
     template_name = 'create_meal/pages/ingredients_create.html'
     form_class = IngredientsForm
@@ -42,7 +44,7 @@ class IngredientsCreate(CreateView):
 
 
 
-class RecipeCreate(CreateView):
+class RecipeCreate(LoginRequiredMixin, CreateView):
     model = Recipe
     template_name = 'create_meal/pages/recipe_create.html'
     form_class = RecipeForm
@@ -54,7 +56,7 @@ class RecipeCreate(CreateView):
 # ========================= Update Views
 
 
-class IngredientsUpdate(UpdateView):
+class IngredientsUpdate(LoginRequiredMixin, UpdateView):
     model = Ingredients
     template_name = 'create_meal/pages/ingredients_update.html'
     fields = '__all__'
@@ -63,7 +65,7 @@ class IngredientsUpdate(UpdateView):
         return '/ingredients_list/'
 
 
-class RecipeUpdate(UpdateView):
+class RecipeUpdate(LoginRequiredMixin, UpdateView):
     model = Recipe
     template_name = 'create_meal/pages/recipe_update.html'
     fields = '__all__'
@@ -75,7 +77,7 @@ class RecipeUpdate(UpdateView):
 # ========================= Delete Views
 
 
-class IngredientsDelete(DeleteView):
+class IngredientsDelete(LoginRequiredMixin, DeleteView):
     model = Ingredients
     template_name = 'create_meal/pages/ingredients_delete.html'
     
@@ -83,7 +85,7 @@ class IngredientsDelete(DeleteView):
         return '/ingredients_list/'
 
 
-class RecipeDelete(DeleteView):
+class RecipeDelete(LoginRequiredMixin, DeleteView):
     model = Recipe
     template_name = 'create_meal/pages/recipe_delete.html'
     
