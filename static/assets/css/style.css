@@ -1,3 +1,4 @@
+/* Recipe Card */
 .recipe-container{
     display: flex;
     width: 80%;
@@ -14,19 +15,54 @@
     
 }
 .recipe-card > h4 {
-    font-size:18px;
+    font-size:24px;
     text-align:center;
     margin-bottom:5px
 }
 .recipe-card > span {
     text-align: center;
-    display: block
+    display: block;
 }
 .recipe-card > h5 {
-    font-size:16px
+    font-size:20px;
+    margin-top:8px;
+    margin-bottom:0;
 }
 .recipe-card > ul{
     display:flex;
+    flex-direction:column;
     flex-wrap:wrap;
     list-style-type:none;
+    padding:0;
+    margin-top:8px;
+    max-height:90px;
+}
+.recipe-card li {
+    padding:0 3px;
+    text-transform:capitalize;
+    font-size:18px
+    
+}
+/* Global Styles */
+/* Buttons */
+.btn{
+    padding: 9px 22px;
+    background-color:#357960;
+    text-decoration:none;
+    color:#fdfdfd;
+    border-radius:5px;
+    margin:10px auto;
+}
+
+.recipe-edit-btns{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+#delete-btn{
+    background-color: #f5625d;
+}
+
+#update-btn{
+    background-color: #f4bd1a;
 }

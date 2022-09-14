@@ -22,9 +22,9 @@
         {% endfor %}
         </ul>
 
-        <div>
-            <span><a href="{% url 'recipe_update' item.id %}">Update</a></span>
-            <span><a href="{% url 'recipe_delete' item.id %}">Delete</a></span>
+        <div class="recipe-edit-btns">
+            <span><a class="btn" id="update-btn" href="{% url 'recipe_update' item.id %}">Update</a></span>
+            <span><a class="btn" id="delete-btn" href="{% url 'recipe_delete' item.id %}">Delete</a></span>
         </div>
     </div>
     {% empty %}
