@@ -1,8 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .forms import IngredientsForm, RecipeForm
 from .models import Ingredients, Recipe
+from django.contrib.auth import authenticate, login, logout
+from django.http import HttpResponse
+
 
 # ========================= List Views
 def home(request):
@@ -84,3 +87,20 @@ class RecipeDelete(DeleteView):
     
     def get_success_url(self):
         return '/recipe_list/'
+
+# ========================= Registration Views
+
+def login_page(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect("home")
+        else:
+            return HttpResponse("invalid credentials")
+    return render(request, "registration/login.html")
+
+
+    
