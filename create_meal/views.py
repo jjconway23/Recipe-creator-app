@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 from .forms import IngredientsForm, RecipeForm
 from .models import Ingredients, Recipe
 
@@ -112,7 +113,7 @@ class SignUp(CreateView):
     success_url = reverse_lazy("login")
     template_name = "create_meal/pages/registration/signup.html"
 
-
+@login_required
 def logout_view(request):
     logout(request)
     return redirect("home")
