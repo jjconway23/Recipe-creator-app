@@ -7,7 +7,7 @@
 {% block content %}
 <h3>Ingredients List</h3>
 <table>
-    <tr>
+    <tr class="table-head">
         <th>ID</th>
         <th>Name</th>
         <th>Quantity</th>
@@ -21,8 +21,8 @@
             <td>{{item.name}}</td>
             <td>{{item.quantity}}</td>
             <td>{{item.unit}}</td>
-            <td><a href="{% url 'ingredients_update' item.id %}">Update</a></td>
-            <td><a href="{% url 'ingredients_delete' item.id %}">Delete</a></td>
+            <td><a class="btn" id="update-btn" href="{% url 'ingredients_update' item.id %}">Update</a></td>
+            <td><a class="btn" id="delete-btn" href="{% url 'ingredients_delete' item.id %}">Delete</a></td>
         </tr>
         {% empty %}
         <p>You have no ingredients added.</p>
