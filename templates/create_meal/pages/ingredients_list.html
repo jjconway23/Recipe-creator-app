@@ -7,15 +7,18 @@
 {% block content %}
 <h3>Ingredients List</h3>
 <table>
-    <tr class="table-head">
-        <th>ID</th>
-        <th>Name</th>
-        <th>Quantity</th>
-        <th>Unit</th>
-        <th></th>
-        <th></th>
-    </tr>
-    {% for item in object_list %}
+    <thead>
+        <tr class="table-head">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Unit</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in object_list %}
         <tr>
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
@@ -27,6 +30,8 @@
         {% empty %}
         <p>You have no ingredients added.</p>
     {% endfor %}
+    </tbody>
+    
 </table>
 <h4><a href="{% url 'ingredients_create' %}">Add new Ingredients</a></h4>
 {% endblock %}

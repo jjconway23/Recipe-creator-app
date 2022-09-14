@@ -173,16 +173,39 @@ h4 > a:visited{
 
 table {
     margin: 0 auto;
-    min-height: 200px;
+    min-height: 400px;
     width:600px;
-    border-top: 2px solid black;
-    border-right:2px solid black;
-    border-left: 2px solid black;
-    border-radius: 5px;
-    padding:30px;
+
+    background:white;
 }
 .table-head {
     color:white;
     border-bottom: 1px solid black;
+    background: #003e29;
+    
+}
+table, th, td {
+    border:2px solid #003e29;
+    border-collapse:collapse;
+    border-top: 2px solid black;
+    border-right:2px solid black;
+    border-left: 2px solid black;
+    border-radius: 5px;
+    
+}
+thead{
+    background: #003e29;  
+    
+}
+thead tr th{
+    padding:30px;
+    
+}
+tbody tr td {
+    height:50px;
+    background: white;
+    text-transform: capitalize;
+    padding:10px;
+    text-align:center;
     
 }
