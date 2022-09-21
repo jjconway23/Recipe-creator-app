@@ -16,9 +16,8 @@
         <span>Cook Time - {{item.cook_time}} mins</span>
         <h5>Ingredients:</h5>
         <ul>
-            {% for ingredient in ingredients %}
+        {% for ingredient in item.ingredients.all %}
             <li>{{ingredient.name}}</li>
-
         {% endfor %}
         </ul>
 
@@ -31,6 +30,6 @@
         <p>You have no ingredients added.</p>
 {% endfor %}
 </div>
-<h4><a href="{% url 'recipe_create'%}">Add new Recipes</a></h4>
+<h4><a id="form-submit-btn" class='btn' href="{% url 'recipe_create'%}">Add new Recipes</a></h4>
 {% endblock %}
 

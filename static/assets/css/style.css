@@ -9,14 +9,6 @@ h1,h2,h3,h4,h5{
 
 }
 
-.btn {
-    padding: 9px 22px;
-    background-color: #357960;
-    text-decoration: none;
-    color: #fdfdfd;
-    border-radius: 5px;
-    margin: 10px auto;
-}
 
 header {
     max-height: 50px;
@@ -34,7 +26,14 @@ h3 {
     margin: 40px;
     
 }
-
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    color: white;
+}
 /* Nav */
 
 nav>ul {
@@ -63,6 +62,16 @@ header > div {
     margin-right: 30px;
 }
 /* Buttons */
+
+.btn {
+    padding: 9px 22px;
+    background-color: #357960;
+    text-decoration: none;
+    color: #fdfdfd;
+    border-radius: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+}
 
 .recipe-edit-btns {
     margin: 30px 0;
@@ -101,6 +110,11 @@ header > div {
     background-color: white;
     border: 1px solid #003e29;
 
+}
+#form-submit-btn {
+    color: #003e29 !important;
+    background: white !important;
+    margin-top: 20px;
 }
 
 /* Recipe Card */
@@ -208,4 +222,12 @@ tbody tr td {
     padding:10px;
     text-align:center;
     
+}
+
+/* Form */
+
+#username, #password, #name, #quantity, #unit{
+    padding:10px;
+    border-radius:5px;
+    margin: 10px 5px
 }

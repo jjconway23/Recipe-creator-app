@@ -12,8 +12,6 @@ urlpatterns = [
     path('ingredients_list/delete/<pk>', views.IngredientsDelete.as_view(), name='ingredients_delete'),
     path('recipe_list/delete/<pk>', views.RecipeDelete.as_view(), name='recipe_delete'),
     path('login/', views.login_page, name='login'),
-    path('signup/',views.SignUp.as_view(), name='signup'),
+    path('signup/', views.SignUp.as_view(), name='signup'),
     path('logout/', views.logout_view, name='logout'),
-
-
 ]

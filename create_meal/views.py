@@ -102,7 +102,7 @@ def login_page(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect("home")
+            return redirect("ingredients_list")
         else:
             return HttpResponse("invalid credentials")
     return render(request, "create_meal/pages/registration/login.html")
@@ -116,4 +116,6 @@ class SignUp(CreateView):
 @login_required
 def logout_view(request):
     logout(request)
-    return redirect("home")
+    return redirect('home')
+
+
