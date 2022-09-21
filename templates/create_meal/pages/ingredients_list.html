@@ -28,7 +28,7 @@
             <td><a class="btn" id="delete-btn" href="{% url 'ingredients_delete' item.id %}">Delete</a></td>
         </tr>
         {% empty %}
-        <p>You have no ingredients added.</p>
+        <p style="color:white; text-align:center; font-weight:bolder;">You have no ingredients added.</p>
     {% endfor %}
     </tbody>
     
