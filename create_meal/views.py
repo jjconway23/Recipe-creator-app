@@ -20,6 +20,8 @@ def home(request):
 class IngredientsList(LoginRequiredMixin, ListView):
     model = Ingredients
     template_name = 'create_meal/pages/ingredients_list.html'
+    redirect_field_name = 'login'
+    login_url = 'login'
 
 
 class RecipeList(LoginRequiredMixin, ListView):

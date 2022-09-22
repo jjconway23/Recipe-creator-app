@@ -230,14 +230,23 @@ tbody tr td {
     
 }
 
-/* Form */
+/* Forms */
 
-#username, #password{
+#username, #password, #id_username, #id_password1, #id_password2{
     padding:10px;
     border-radius:5px;
     margin: 10px 5px
 }
 
+.helptext {
+    display: block;
+    margin-top: 10px;
+}
+.sign-up-form ul {
+    text-align:left;
+    width:fit-content;
+    margin:0 auto;
+}
 /* Home Page */
 
 .grid-container{
@@ -246,6 +255,7 @@ tbody tr td {
     margin: 60px auto;
     width: fit-content;
     align-content: center;
+    border-radius: 1rem;
 }
 .grid-item-1{
     grid-row: 1/2;
