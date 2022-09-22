@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5{
 header {
     max-height: 50px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px;
     align-items: center;
     background: white;
@@ -41,13 +41,14 @@ nav>ul {
     display: flex;
     font-size: 20px;
     padding: 0;
-    margin-right: 100px
+    margin-left: 100px
 }
 
 nav>ul a {
     padding: 0 10px;
     text-decoration: none;
     color: #003e29;
+    font-weight: bolder;
 }
 
 nav>ul a:hover {
@@ -60,6 +61,10 @@ nav>ul a:visited {
 }
 header > div {
     margin-right: 30px;
+}
+#logo {
+    max-height: 50px;
+    margin-left: 30px;
 }
 /* Buttons */
 
@@ -237,9 +242,9 @@ tbody tr td {
 
 .grid-container{
     display: grid;
-    grid-template: 300px 300px / 300px 300px;
+    grid-template: 400px 400px / 30vw 30vw;
     margin: 60px auto;
-    width: 600px;
+    width: fit-content;
     align-content: center;
 }
 .grid-item-1{
@@ -265,4 +270,13 @@ tbody tr td {
     padding:50px 30px;
     display: flex;
     align-items: center; 
+}
+.grid-item-2, .grid-item-4 {
+    padding: 10px;
+    background: #FFFDD0;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

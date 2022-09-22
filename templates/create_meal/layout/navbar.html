@@ -1,11 +1,10 @@
+{% load static %}
 <header>
+    <a href="{% url 'home' %}"><img id="logo" src="https://res.cloudinary.com/jjconway23/image/upload/v1663846334/recipe-app/logo-no-background_rpdjdv.png" alt="company logo"></a>
+
     <nav>
         <ul>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'ingredients_list' %}">Ingredients</a></li>
-            <li><a href="{% url 'recipe_list' %}">Recipes</a></li>
-            {% else %}
-            <li ><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'ingredients_list' %}">Ingredients</a></li>
             <li><a href="{% url 'recipe_list' %}">Recipes</a></li>
             {% endif %}
