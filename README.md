@@ -67,4 +67,19 @@ Lastly users who would like to use this app are given the option to sign up and 
 
 ### Recipe Page
 
+### Recipe Card List
+- Users are then encouraged to add a new Recipe to their list. 
+- If user has no Recipes in their list a paragraph will be displayed showing a message letting the user know their list is empty.
+- Once a recipe has been added to a users list, a card will show the name of the recipe, the cook time and the ingredients that are associated with that recipe.
+- The card also has update and delete buttons that allow users to modify their recipes or delete them.
+- A button is shown below the list of recipes allowing users to easily add a new recipe.
+<img src="">
     
+### Login Page
+    - Allows users who have an account to login.
+<img src="">
+
+### Sign Up Page
+    - Allows users who don't have an account to signup for one.
+<img src="">
+
