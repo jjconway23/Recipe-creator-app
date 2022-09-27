@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<h3>Ingredients List</h3>
+<h3>{{user.name}} Ingredients List</h3>
 <table>
     <thead>
         <tr class="table-head">
@@ -29,9 +29,20 @@
         </tr>
         {% empty %}
         <p style="color:white; text-align:center; font-weight:bolder;">You have no ingredients added.</p>
-    {% endfor %}
+        {% endfor %}
     </tbody>
-    
+
 </table>
 <h4><a id="form-submit-btn" class='btn' href="{% url 'ingredients_create' %}">Add new Ingredients</a></h4>
+{% comment %}<div class="modal-container">
+    <div class="model-content">
+        <h3>Update Ingredient</h3>
+        {% include 'create_meal/components/create_form.html' %}
+    </div>
+</div>
+<script>
+    $('#update-btn').click(function(){
+        $(".modal-content").load("{% url 'ingredients_update' item.id %}")
+    })
+</script>{% endcomment %}
 {% endblock %}
