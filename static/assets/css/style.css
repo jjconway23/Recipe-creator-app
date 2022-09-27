@@ -298,10 +298,14 @@ footer {
     background: #fff;
     width: 100%;
     color: #003e29;
-    height: 100px;
+    height: 50px;
     justify-content: center;
     align-content: center;
     display: flex;
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding: 12px;
 }
 .socials {
   justify-content: center;

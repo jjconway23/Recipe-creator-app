@@ -1,4 +1,4 @@
-<h1 align="center">Recipe Creator</h1>
+<h1 align="center">Recipe Planner</h1>
 
 ## BackGround
 
@@ -41,9 +41,30 @@ Lastly users who would like to use this app are given the option to sign up and 
         -   Two google fonts were used in making this website. Raleway for the headings and Lato for the rest of the text across the website. Sans Serif and cursive as the fallback font in case for any reason the font isn't being imported into the site correctly. 
     -   #### Imagery
         -   Our company Logo which is featured on every page, located in the top left of the navbar.
-        -   Two videos on the home screen showing users how to create and ingredient and how to assing it to a recipe.
+        -   Two videos on the home screen showing users how to create an ingredient and how to assign the ingredient to a recipe.
 
+## Features
+### Home Page
 
+#### Navigation
+- Positioned at the top of the page. On the left it has the site logo.
+- To the right it has the two buttons Login and Sign Up. When you create an account and login, you have access to the Ingredients page and the Recipes page. Also the Login and Sign Up buttons are removed and it is replaced with a Logout button.
+<img src="">
 
+#### Landing Page 
+- Users are greeted with a short video clip of how to add Ingredients.
+- Users are greeted with a short video clip of how to add Recipes.
+<img src="">
+
+### Ingredients Page
+
+#### Ingredients Table
+    - Users are directed to a table that will show ingredients they have added to their list.
+    - If user has no ingredients in their list a paragraph above the table shows message letting the user know their list is empty.
+    - The table is populated with the Ingredient ID, Name, Quantity and unit. Aswell as buttons for update and delete.
+    - A button below the table allowing users to easily add a new ingredient.
+<img src="">
+
+### Recipe Page
 
     
