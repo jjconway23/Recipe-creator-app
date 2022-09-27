@@ -83,3 +83,28 @@ Lastly users who would like to use this app are given the option to sign up and 
     - Allows users who don't have an account to signup for one.
 <img src="">
 
+### Footer
+- The footer has links which use font awesome fonts for facebook, youtube, twitter and instagram accounts.
+- When links are clicked on they open our social media accounts in a new tab.
+<img src="">
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Javascipt](https://en.wikipedia.org/wiki/JavaScript)
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Frameworks, Libraries & Programs Used
+
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Roboto' and 'Oswald' font into the style.css file which is used on all pages throughout the project.
+2. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+3. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+4. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+5. [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
+    - Django was used to build crud functionality and allowed me to use database.
+
