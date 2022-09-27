@@ -141,6 +141,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         1. Once the new visitor has arrived on the page they are immediately met with a site logo that explains what the site is for. 
         2. The user is also given a short tutorial of how to use the app.
         2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
+    
+    4. As a First Time Visitor, I want to be able to create an Ingredient or Recipie
+        1. Once user has created an account, they can add Ingredients to their list.
+        2. The user will be able to create a Recipe once they have added their Ingredients to their list.
+
+    5. As a First Time Visitor, I want to be able to update an Ingredient or Recipie
+        1. Once a user has added an ingredient to their list, they are able to update any entry in the database they have made.
+        2. Once a user has added an ingredient to their list, they are able to update any entry in the database they have made.
+    
+    6. As a First Time Visitor, I want to be able to delete an Ingredient or Recipie
+        1. Once a user has added an ingredient to their list, they are able to delete any entry in the database they have made.
+        2. Once a user has added an ingredient to their list, they are able to delete any entry in the database they have made.
 
 -   #### Returning Visitor
 
@@ -154,3 +166,39 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. As a Frequent User, I want to use this as my main recipe planner and/or a shopping list app.
 
         1. The frequent user would remember how to navigate through the app and have all data saved previously, restored in everyone of their sessions.
+
+### Known Bugs
+
+- N/A
+
+## Deployment
+
+### Heroku
+
+- Step 1: Scaffold a Django Project for Hosting
+  - Create a Virtual Environment
+  - Install Project Dependencies
+  - Update Local Database Schema (Optional)
+  - Run a Local Development Server
+- Step 2: Create a Local Git Repository
+  - Initialize an Empty Git Repository
+  - Specify Untracked Files
+  - Make the First Commit
+- Step 3: Create a Free Heroku Account
+  - Sign Up
+  - Enable Multi-Factor Authentication (Optional)
+  - Add a Payment Method (Optional)
+- Step 4: Install the Heroku CLI
+- Step 5: Log In With the Heroku CLI
+- Step 6: Create a Heroku App
+- Step 7: Deploy Your Django Project to Heroku
+  - Choose a Buildpack
+  - Choose the Python Version (Optional)
+  - Specify Processes to Run
+  - Configure Django
+  - Configure the Heroku App
+  - Make an App Release
+- Step 8: Set Up a Relational Database
+  - Provision a PostgreSQL Server
+  - Update Remote Database Schema
+  - Populate the Database
