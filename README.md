@@ -59,10 +59,11 @@ Lastly users who would like to use this app are given the option to sign up and 
 ### Ingredients Page
 
 #### Ingredients Table
-    - Users are directed to a table that will show ingredients they have added to their list.
-    - If user has no ingredients in their list a paragraph above the table shows message letting the user know their list is empty.
-    - The table is populated with the Ingredient ID, Name, Quantity and unit. Aswell as buttons for update and delete.
-    - A button below the table allowing users to easily add a new ingredient.
+
+- Users are directed to a table that will show ingredients they have added to their list.
+- If user has no ingredients in their list a paragraph above the table shows message letting the user know their list is empty.
+- The table is populated with the Ingredient ID, Name, Quantity and unit. Aswell as buttons for update and delete.
+- A button below the table allowing users to easily add a new ingredient.
 <img src="">
 
 ### Recipe Page
@@ -76,11 +77,11 @@ Lastly users who would like to use this app are given the option to sign up and 
 <img src="">
     
 ### Login Page
-    - Allows users who have an account to login.
+- Allows users who have an account to login.
 <img src="">
 
 ### Sign Up Page
-    - Allows users who don't have an account to signup for one.
+- Allows users who don't have an account to signup for one.
 <img src="">
 
 ### Footer
@@ -98,7 +99,7 @@ Lastly users who would like to use this app are given the option to sign up and 
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Roboto' and 'Oswald' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Lato' and 'Raleway' font into the base.html file which is used on all pages throughout the project.
 2. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 3. [Git](https://git-scm.com/)
@@ -106,5 +107,50 @@ Lastly users who would like to use this app are given the option to sign up and 
 4. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 5. [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
-    - Django was used to build crud functionality and allowed me to use database.
+    - Django was used to build crud functionality and allowed me to use a database to save user data to.
 
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+### HTML Validator
+-   [W3C HTML Validator](https://validator.w3.org/) - [Results]()
+
+### CSS Validator
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
+
+### Python Validator
+-   [Python Validator](https://infoheap.com/python-lint-online/) - [Results]()
+
+### Testing User Stories from User Experience (UX) Section
+
+-   #### First Time Visitor
+
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and create an account so i can start adding things to my list.
+
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable header and navigation bar.
+        2. The main points on the homepage are a video along with a couple lines of instructions about how to use the app.
+        3. The user can login or signup to use the app, indicated by the buttons at the top of the navbar.
+
+    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+
+        1. The website is fluid, designed with UX at the top of my priorities. Each page has navigation bar, each link descriptive and is designed so that the user can easily remember the design of my page after a couple clicks.
+        2. At the bottom of each page there is links to our social media accounts.
+        
+    3. As a First Time Visitor, I want to look for a link directing me to what ive come to the site for.
+        1. Once the new visitor has arrived on the page they are immediately met with a site logo that explains what the site is for. 
+        2. The user is also given a short tutorial of how to use the app.
+        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
+
+-   #### Returning Visitor
+
+    1. As a Returning Visitor, I want to add more Ingredients to my list and new Recipes. 
+
+        1. The user can easily get back up to speed where they left off upon loggin in. 
+        2. Responsive site can be used on any device screen size.
+
+-   #### Frequent User
+
+    1. As a Frequent User, I want to use this as my main recipe planner and/or a shopping list app.
+
+        1. The frequent user would remember how to navigate through the app and have all data saved previously, restored in everyone of their sessions.
