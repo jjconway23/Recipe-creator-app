@@ -14,8 +14,8 @@ Lastly users who would like to use this app are given the option to sign up and 
 -   ### User stories
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about what the site has to offer
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find relevant content
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about what the site has to offer.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find relevant content.
         3. As a First Time Visitor, I want to be able to create Ingredients, so i can add to my list of Ingredients.
         4. As a First Time Visitor, I want to be able to create Recipes, so i can add to my list of Recipes.
         5. As a First Time Visitor, I want to be able to view Ingredients, so i can see my list of Ingredients.
@@ -25,8 +25,23 @@ Lastly users who would like to use this app are given the option to sign up and 
         10. As a First Time Visitor, I want to be able to delete Recipes, so i can delete Recipes.
         11. As a First Time Visitor, I want to be able to delete Ingredients, so i can delete Ingredients.
         12. As a First Time Visitor, I want to be able to sign up, so i can create my own account.
+    
+    -   #### Returning Visitor Goals
 
+        1. As a Returning Visitor, I want to see Ingredients that i have added to my ingredients list.
+        2. As a Returning Visitor, I want to see Recipes that i have added to my ingredients list.
 
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to use this app as a shopping list.
+
+-   ### Design
+    -   #### Colour Scheme
+        -   The three main color schemes are white and green.
+    -   #### Typography
+        -   Two google fonts were used in making this website. Raleway for the headings and Lato for the rest of the text across the website. Sans Serif and cursive as the fallback font in case for any reason the font isn't being imported into the site correctly. 
+    -   #### Imagery
+        -   Our company Logo which is featured on every page, located in the top left of the navbar.
+        -   Two videos on the home screen showing users how to create and ingredient and how to assing it to a recipe.
 
 
 
