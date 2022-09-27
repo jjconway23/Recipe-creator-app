@@ -49,12 +49,16 @@ Lastly users who would like to use this app are given the option to sign up and 
 #### Navigation
 - Positioned at the top of the page. On the left it has the site logo.
 - To the right it has the two buttons Login and Sign Up. When you create an account and login, you have access to the Ingredients page and the Recipes page. Also the Login and Sign Up buttons are removed and it is replaced with a Logout button.
-<img src="">
+
+<img src="media/readme-pics/nav-signed-out.png">
+<img src="media/readme-pics/nav-loggedin.png">
+
 
 #### Landing Page 
 - Users are greeted with a short video clip of how to add Ingredients.
 - Users are greeted with a short video clip of how to add Recipes.
-<img src="">
+
+<img src="media/readme-pics/landing-page.png">
 
 ### Ingredients Page
 
@@ -64,7 +68,8 @@ Lastly users who would like to use this app are given the option to sign up and 
 - If user has no ingredients in their list a paragraph above the table shows message letting the user know their list is empty.
 - The table is populated with the Ingredient ID, Name, Quantity and unit. Aswell as buttons for update and delete.
 - A button below the table allowing users to easily add a new ingredient.
-<img src="">
+
+<img src="media/readme-pics/ingredients-list.png">
 
 ### Recipe Page
 
@@ -74,20 +79,26 @@ Lastly users who would like to use this app are given the option to sign up and 
 - Once a recipe has been added to a users list, a card will show the name of the recipe, the cook time and the ingredients that are associated with that recipe.
 - The card also has update and delete buttons that allow users to modify their recipes or delete them.
 - A button is shown below the list of recipes allowing users to easily add a new recipe.
-<img src="">
-    
+
+<img src="media/readme-pics/recipe-list.png">
+
+### Update Page
+- Both Recipe and Ingredients have the ability to update an individual entry.
+- 
+
+
 ### Login Page
 - Allows users who have an account to login.
-<img src="">
+<img src="media/readme-pics/login-page.png">
 
 ### Sign Up Page
 - Allows users who don't have an account to signup for one.
-<img src="">
+<img src="media/readme-pics/signup.png">
 
 ### Footer
 - The footer has links which use font awesome fonts for facebook, youtube, twitter and instagram accounts.
 - When links are clicked on they open our social media accounts in a new tab.
-<img src="">
+<img src="media/readme-pics/footer.png">
 
 ### Languages Used
 
@@ -202,3 +213,24 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   - Provision a PostgreSQL Server
   - Update Remote Database Schema
   - Populate the Database
+
+
+## Credits
+
+### Code
+
+- N/A
+
+### Content
+
+-   All content was written by the developer.
+
+### Media
+
+-   
+### Acknowledgements
+- Codecademy
+- Denis Ivy Youtube videos
+- W3c
+- Scrimba
+- Tech with Tim Youtube videos

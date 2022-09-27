@@ -325,3 +325,41 @@ footer a:hover {
 footer a:visited {
     color: #003e29;
 }
+    /* Media Queries */
+
+    @media (max-width: 700px){
+        .grid-container{
+            display:flex;
+            flex-direction:column;
+            width:80vw;
+            margin: 60px auto;
+            justify-content:center;
+            align-items:center;
+        }
+          /* .grid-item-1, .grid-item-2,.grid-item-3,.grid-item-4{
+            min-width:100%;  
+          } */
+        header{
+          min-height: 20vh;
+          position:relative;
+        }
+        header div, nav ul {
+          display:flex;
+          flex-direction:column;
+        }
+        nav {
+          align-self:flex-start;
+        }
+        .logout-btn {
+          position:absolute;
+          top:12vh;
+          right:10vw;
+        }
+        .recipe-container{
+            flex-direction:column;
+            padding:20px;
+        }
+        .recipe-card{
+            width:90%
+        }
+      }
