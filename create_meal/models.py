@@ -14,7 +14,8 @@ class Ingredients(models.Model):
     ]
     name = models.CharField(max_length=50)
     quantity = models.CharField(max_length=40)
-    unit = models.CharField(max_length=4, choices=UNIT_CHOICES, null=True, blank=True)
+    unit = models.CharField(max_length=4, choices=UNIT_CHOICES, null=True, blank=True, default="")
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.name

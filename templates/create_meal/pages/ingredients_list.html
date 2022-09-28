@@ -13,7 +13,7 @@
 {% endblock %}
 
 {% block content %}
-<h3>{{user.name}} Ingredients List</h3>
+<h3>{{request.user.username|title}}'s Ingredients List</h3>
 <table id="ingredients-table">
     <thead>
         <tr class="table-head">
@@ -27,7 +27,7 @@
     </thead>
     <tbody>
         {% for item in object_list %}
-        {% comment %}{% for item in user.ingredients.all %}{% endcomment %}
+            {% if request.user == item.created_by %}
         
         <tr>
             <td>{{item.id}}</td>
@@ -37,6 +37,8 @@
             <td><a class="btn" id="update-btn" href="{% url 'ingredients_update' item.id %}">Update</a></td>
             <td><a class="btn" id="delete-btn" href="{% url 'ingredients_delete' item.id %}">Delete</a></td>
         </tr>
+        {% endif %}
+
         {% empty %}
         <p style="color:white; text-align:center; font-weight:bolder;">You have no ingredients added.</p>
         {% endfor %}
