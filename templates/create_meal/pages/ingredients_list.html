@@ -17,7 +17,6 @@
 <table id="ingredients-table">
     <thead>
         <tr class="table-head">
-            <th>ID</th>
             <th>Name</th>
             <th>Quantity</th>
             <th>Unit</th>
@@ -30,7 +29,6 @@
             {% if request.user == item.created_by %}
         
         <tr>
-            <td>{{item.id}}</td>
             <td>{{item.name}}</td>
             <td>{{item.quantity}}</td>
             <td>{{item.unit}}</td>
