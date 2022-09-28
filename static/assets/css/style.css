@@ -281,7 +281,7 @@ tbody tr td {
     display: flex;
     align-items: center; 
 }
-.grid-item-3, .grid-item-1 {
+.grid-item-3 {
     grid-row: 2/3;
     grid-column: 2/3;
     background: #336453;
@@ -293,6 +293,15 @@ tbody tr td {
     display: flex;
     align-items: center; 
 }
+.grid-item-2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.grid-item-4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
 .grid-item-2, .grid-item-4 {
     padding: 10px;
     background: #FFFDD0;
@@ -314,6 +323,7 @@ footer {
     display: flex;
     bottom:0;
     left:0;
+    position: absolute;
 }
 .socials {
   justify-content: center;
