@@ -27,6 +27,8 @@
     </thead>
     <tbody>
         {% for item in object_list %}
+        {% comment %}{% for item in user.ingredients.all %}{% endcomment %}
+        
         <tr>
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>

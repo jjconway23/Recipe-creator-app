@@ -9,7 +9,9 @@
 <div class="recipe-container">
 
 
-{% for item in object_list %}
+    {% for item in object_list %}
+{% comment %}{% for item in user.recipies.all %}{% endcomment %}
+    {% if request.user == item.created_by %}
     <div class="recipe-card">
         <!-- <img src="" alt=""> -->
         <h4>{{item.name}}</h4>
@@ -26,6 +28,7 @@
             <span><a class="btn" id="delete-btn" href="{% url 'recipe_delete' item.id %}">Delete</a></span>
         </div>
     </div>
+    {% endif %}
     {% empty %}
         <p style="color:white;font-weight:bolder;">You have no ingredients added.</p>
 {% endfor %}

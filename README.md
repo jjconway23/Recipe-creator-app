@@ -127,13 +127,11 @@ Lastly users who would like to use this app are given the option to sign up and 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 ### HTML Validator
--   [W3C HTML Validator](https://validator.w3.org/) - [Results]()
+-   [W3C HTML Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Frecipe-ingredients-creator.herokuapp.com%2F)
 
 ### CSS Validator
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frecipe-ingredients-creator.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-### Python Validator
--   [Python Validator](https://infoheap.com/python-lint-online/) - [Results]()
 
 ### Testing User Stories from User Experience (UX) Section
 

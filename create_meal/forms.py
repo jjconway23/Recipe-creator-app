@@ -11,5 +11,5 @@ class IngredientsForm(ModelForm):
 class RecipeForm(ModelForm):
     class Meta:
         model = Recipe
-        fields = '__all__'
+        fields = ['name', 'cook_time', 'ingredients']
 

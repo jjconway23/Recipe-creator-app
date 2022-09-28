@@ -52,6 +52,12 @@ class RecipeCreate(LoginRequiredMixin, CreateView):
     template_name = 'create_meal/pages/recipe_create.html'
     form_class = RecipeForm
 
+    def form_valid(self, form):
+        obj = form.save(commit=False)
+        obj.created_by = self.request.user
+        obj.save()
+        return super().form_valid(form)
+
     def get_success_url(self):
         return '/recipe_list/'
 
