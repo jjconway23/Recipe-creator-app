@@ -84,7 +84,9 @@ Lastly users who would like to use this app are given the option to sign up and 
 
 ### Update Page
 - Both Recipe and Ingredients have the ability to update an individual entry.
-- 
+- You can make changes to 1 field or all fields.
+
+<img src="media/readme-pics/update-example.png">
 
 
 ### Login Page
