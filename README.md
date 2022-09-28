@@ -7,7 +7,7 @@ There is also an ingredients page where you can create ingredients providing the
 Additionally there is a recipe page, in which you can create a recipe and assign the ingredients to that recipe. It also allows you to provide a name and a cook time for the recipe.
 Lastly users who would like to use this app are given the option to sign up and have user specific data populated from the database. It was designed responsively so devices from phones to monitors can view them.
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="media/readme-pics/am-i-responsive.png"></h2>
 
 ## User Experience (UX)
 
@@ -91,10 +91,12 @@ Lastly users who would like to use this app are given the option to sign up and 
 
 ### Login Page
 - Allows users who have an account to login.
+
 <img src="media/readme-pics/login-page.png">
 
 ### Sign Up Page
 - Allows users who don't have an account to signup for one.
+
 <img src="media/readme-pics/signup.png">
 
 ### Footer
