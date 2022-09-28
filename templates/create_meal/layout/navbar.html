@@ -7,6 +7,7 @@
             {% if user.is_authenticated %}
             <li><a href="{% url 'ingredients_list' %}">Ingredients</a></li>
             <li><a href="{% url 'recipe_list' %}">Recipes</a></li>
+            <li><a class="hide logout-link" href="{% url 'logout' %}">Logout</a></li>
             {% endif %}
         </ul>
     </nav>
@@ -16,7 +17,7 @@
         {% else %}
 
             <a class="btn login-btn" href="{% url 'login' %}">Login</a>
-            <a class="btn signup-btn" href="{% url 'signup' %}">SignUp</a>
+            <a class="btn signup-btn" href="{% url 'signup' %}">Sign Up</a>
         {% endif %}
 
     </div>
