@@ -11,6 +11,16 @@
     }
   }
 </style>
+<script>
+  window.addEventListener('load',shake)
+  function shake() {
+    document.querySelector(".sign-up-form").classList.add("shake-animation");
+  }
+  setTimeout(()=>{
+    document.querySelector(".sign-up-form").classList.remove("shake-animation");
+    },3000)
+
+</script>
 {% endblock %}
 {% block content %}
 <h4 style="color:white; text-align:center; font-weight:bolder;">Sign Up!</h4>
